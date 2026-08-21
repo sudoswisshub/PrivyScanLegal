@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>PrivyScan — Support</title>
+<style>
+  :root {
+    color-scheme: light dark;
+    --bg: #ffffff;
+    --text: #1c1c1e;
+    --muted: #6e6e73;
+    --accent: #135cc7;
+    --rule: #e5e5ea;
+    --card: #f6f6f8;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #000000;
+      --text: #f2f2f7;
+      --muted: #98989f;
+      --accent: #4fa3ff;
+      --rule: #2c2c2e;
+      --card: #1c1c1e;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI", Roboto, sans-serif;
+    line-height: 1.55;
+  }
+  .wrap { max-width: 680px; margin: 0 auto; padding: 32px 22px 64px; }
+  h1 { font-size: 1.6rem; margin: 0 0 4px; letter-spacing: -0.02em; }
+  .updated { color: var(--muted); font-size: 0.9rem; margin-bottom: 28px; }
+  .lede {
+    background: var(--card);
+    border-radius: 14px;
+    padding: 16px 18px;
+    font-size: 0.98rem;
+    margin-bottom: 28px;
+  }
+  h2 { font-size: 1.08rem; margin: 32px 0 10px; letter-spacing: -0.01em; }
+  h3 { font-size: 0.98rem; margin: 20px 0 6px; }
+  p { margin: 0 0 14px; font-size: 0.98rem; }
+  ul { margin: 0 0 14px; padding-left: 1.3em; }
+  li { margin-bottom: 6px; font-size: 0.98rem; }
+  a { color: var(--accent); text-decoration: none; }
+  a:hover { text-decoration: underline; }
+  hr { border: none; border-top: 1px solid var(--rule); margin: 36px 0 24px; }
+  .faq {
+    background: var(--card);
+    border-radius: 14px;
+    padding: 4px 18px;
+    margin-bottom: 8px;
+  }
+  .contact {
+    background: var(--card);
+    border-radius: 14px;
+    padding: 16px 18px;
+  }
+  .contact p { margin: 0; }
+  .button {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 18px;
+    border-radius: 999px;
+    background: var(--accent);
+    color: #fff;
+    font-weight: 600;
+    font-size: 0.94rem;
+  }
+  footer { color: var(--muted); font-size: 0.82rem; margin-top: 40px; text-align: center; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <h1>Support</h1>
+  <div class="updated">PrivyScan</div>
+
+  <div class="lede">
+    Stuck on something, or found a bug? Email us and we'll get back to you — most messages are
+    answered within a couple of days.
+  </div>
+
+  <h2>Frequently asked questions</h2>
+
+  <div class="faq">
+    <h3>Why does PrivyScan need Bluetooth and Location access?</h3>
+    <p>Bluetooth is how PrivyScan finds nearby devices at all — it's the core of the app. Location lets PrivyScan tell a device that's travelling with you from one that's simply sitting in the same place, and lets iOS wake a scan in the background after you've moved. Both stay on your device; see the <a href="privacy.html">Privacy Policy</a> for details.</p>
+  </div>
+
+  <div class="faq">
+    <h3>Does PrivyScan work if I only grant "While Using"?</h3>
+    <p>Yes — scanning while the app is open works fully with "When in Use" location access. "Always" access is only needed for PrivyScan to re-check things automatically after you've changed places while the app is in the background.</p>
+  </div>
+
+  <div class="faq">
+    <h3>Why didn't PrivyScan detect a device I know is nearby?</h3>
+    <p>Some devices advertise infrequently, use Bluetooth privacy features that rotate their address, or simply aren't broadcasting while paired to their owner's phone. Try starting a fresh scan and giving it the full sweep duration — a device that appears only briefly may need a couple of sweeps to be classified with confidence.</p>
+  </div>
+
+  <div class="faq">
+    <h3>A device I own keeps getting flagged. How do I stop that?</h3>
+    <p>Open the device's detail screen and choose "Mark as safe." Trusted devices stay visible in future scans but never trigger an alert. You can review and remove trusted devices anytime from Settings ▸ Safe devices.</p>
+  </div>
+
+  <div class="faq">
+    <h3>What does "Identify silent devices" do?</h3>
+    <p>Devices that broadcast no name, vendor, or services can only be identified by briefly connecting and reading their service list. This setting, off by default, is the only part of PrivyScan that initiates a Bluetooth connection instead of passively listening. Nothing is paired, and no data beyond the service list is read.</p>
+  </div>
+
+  <div class="faq">
+    <h3>Is any of my data sent anywhere?</h3>
+    <p>No. PrivyScan has no servers, no accounts, and no network code — everything stays on your device. See the <a href="privacy.html">Privacy Policy</a> for the full picture.</p>
+  </div>
+
+  <hr>
+
+  <div class="contact">
+    <h2 style="margin-top:0">Still need help?</h2>
+    <p>Email <a href="mailto:alice.turcanu91@gmail.com">alice.turcanu91@gmail.com</a> with a description of the issue and, if you can, your device model and iOS version — it makes tracking down bugs much faster.</p>
+    <a class="button" href="mailto:alice.turcanu91@gmail.com">Contact support</a>
+  </div>
+
+  <footer>PrivyScan Support</footer>
+</div>
+</body>
+</html>

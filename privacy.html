@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>PrivyScan — Privacy Policy</title>
+<style>
+  :root {
+    color-scheme: light dark;
+    --bg: #ffffff;
+    --text: #1c1c1e;
+    --muted: #6e6e73;
+    --accent: #135cc7;
+    --rule: #e5e5ea;
+    --card: #f6f6f8;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #000000;
+      --text: #f2f2f7;
+      --muted: #98989f;
+      --accent: #4fa3ff;
+      --rule: #2c2c2e;
+      --card: #1c1c1e;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI", Roboto, sans-serif;
+    line-height: 1.55;
+  }
+  .wrap { max-width: 680px; margin: 0 auto; padding: 32px 22px 64px; }
+  h1 { font-size: 1.6rem; margin: 0 0 4px; letter-spacing: -0.02em; }
+  .updated { color: var(--muted); font-size: 0.9rem; margin-bottom: 28px; }
+  .lede {
+    background: var(--card);
+    border-radius: 14px;
+    padding: 16px 18px;
+    font-size: 0.98rem;
+    margin-bottom: 28px;
+  }
+  h2 { font-size: 1.08rem; margin: 32px 0 10px; letter-spacing: -0.01em; }
+  p { margin: 0 0 14px; font-size: 0.98rem; }
+  ul { margin: 0 0 14px; padding-left: 1.3em; }
+  li { margin-bottom: 6px; font-size: 0.98rem; }
+  a { color: var(--accent); text-decoration: none; }
+  a:hover { text-decoration: underline; }
+  hr { border: none; border-top: 1px solid var(--rule); margin: 36px 0 24px; }
+  .contact {
+    background: var(--card);
+    border-radius: 14px;
+    padding: 16px 18px;
+  }
+  .contact p { margin: 0; }
+  footer { color: var(--muted); font-size: 0.82rem; margin-top: 40px; text-align: center; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <h1>Privacy Policy</h1>
+  <div class="updated">Effective August 20, 2026</div>
+
+  <div class="lede">
+    PrivyScan has no servers and no accounts. There is no network code in the app at all —
+    everything it detects and stores stays on your device, and nothing is ever sent anywhere.
+  </div>
+
+  <h2>What PrivyScan does</h2>
+  <p>
+    PrivyScan scans for nearby Bluetooth Low Energy devices — smart glasses, cameras, and
+    trackers — and helps you tell whether something unfamiliar is simply nearby or has been
+    following you from place to place.
+  </p>
+
+  <h2>Information we don't collect</h2>
+  <p>
+    We don't collect analytics, crash reports, advertising identifiers, or any data about you or
+    your device. PrivyScan doesn't know who you are, and has no way to find out — there is no
+    account, no sign-in, and no connection to any PrivyScan server, because none exists.
+  </p>
+
+  <h2>What stays on your device</h2>
+  <p>The following information is created and stored only in PrivyScan's own private storage on your device, using Apple's on-device SwiftData framework:</p>
+  <ul>
+    <li><strong>Detected devices</strong> — the Bluetooth advertisements PrivyScan has seen during a scan, and how they were classified.</li>
+    <li><strong>Scan history</strong> — a local log of past sweeps, so you can review what was seen and when.</li>
+    <li><strong>Trusted devices</strong> — any device you mark as safe, so PrivyScan stops flagging it.</li>
+    <li><strong>Last known coarse location</strong> — used only to tell a device that is following you across places from one that is simply sitting nearby, and so iOS can wake a background scan when you move.</li>
+  </ul>
+  <p>None of this ever leaves your device. You can clear detection history and trusted devices at any time from within the app.</p>
+
+  <h2>Permissions PrivyScan asks for</h2>
+  <ul>
+    <li><strong>Bluetooth</strong> — required to scan for nearby BLE advertisements. This is the core of what PrivyScan does.</li>
+    <li><strong>Location (When in Use / Always)</strong> — used to distinguish a tracker that travels with you from one that is simply nearby, and to let iOS relaunch a scan in the background after you've moved. PrivyScan does not use location for any other purpose, and never uploads it.</li>
+    <li><strong>Notifications</strong> — used to alert you locally when a detection reaches medium confidence or higher. These notifications are generated and delivered entirely on-device.</li>
+  </ul>
+  <p>You can grant, restrict, or revoke any of these permissions at any time in the iOS Settings app. PrivyScan's core scanning still works with only "When in Use" location access; background re-scanning after you change places needs "Always."</p>
+
+  <h2>The one thing PrivyScan connects to</h2>
+  <p>
+    If you turn on the optional "Identify silent devices" setting, PrivyScan will briefly connect
+    to a nearby device that broadcasts no name, vendor, or services, read its list of services,
+    and disconnect. Nothing is paired, and no data is read from or written to the device beyond
+    that service list. This setting is off by default, and is the only situation in which
+    PrivyScan initiates a connection rather than passively listening.
+  </p>
+
+  <h2>Data sharing</h2>
+  <p>PrivyScan does not share, sell, or transmit your data to anyone, because it has no mechanism to transmit data anywhere. There are no third-party SDKs, analytics libraries, or advertising frameworks in the app.</p>
+
+  <h2>Children's privacy</h2>
+  <p>PrivyScan does not knowingly collect information from anyone, including children, because it does not collect information at all.</p>
+
+  <h2>Changes to this policy</h2>
+  <p>If this policy changes, the "Effective" date above will be updated and the new version will ship with the next app update. Material changes will be described in the app's release notes.</p>
+
+  <hr>
+
+  <div class="contact">
+    <h2 style="margin-top:0">Questions</h2>
+    <p>If you have any questions about this policy, contact <a href="mailto:alice.turcanu91@gmail.com">alice.turcanu91@gmail.com</a>.</p>
+  </div>
+
+  <footer>PrivyScan Privacy Policy</footer>
+</div>
+</body>
+</html>
