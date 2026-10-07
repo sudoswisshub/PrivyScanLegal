@@ -61,11 +61,13 @@
 <body>
 <div class="wrap">
   <h1>Privacy Policy</h1>
-  <div class="updated">Effective August 20, 2026</div>
+  <div class="updated">Effective September 16, 2026</div>
 
   <div class="lede">
-    PrivyScan has no servers and no accounts. There is no network code in the app at all —
-    everything it detects and stores stays on your device, and nothing is ever sent anywhere.
+    PrivyScan has no servers and no accounts. Everything it detects and stores stays on your
+    device. The only time the app touches the network is to offer the optional PrivyScan Pro
+    subscription — which is handled entirely by Apple's App Store — and even then, nothing about
+    what you scan is ever sent anywhere.
   </div>
 
   <h2>What PrivyScan does</h2>
@@ -89,6 +91,7 @@
     <li><strong>Scan history</strong> — a local log of past sweeps, so you can review what was seen and when.</li>
     <li><strong>Trusted devices</strong> — any device you mark as safe, so PrivyScan stops flagging it.</li>
     <li><strong>Last known coarse location</strong> — used only to tell a device that is following you across places from one that is simply sitting nearby, and so iOS can wake a background scan when you move.</li>
+    <li><strong>Free-scan count</strong> — a simple local tally of how many free scans you have used, so the app can show your remaining free allowance. It is a number, not a history of what you scanned, and it never leaves your device.</li>
   </ul>
   <p>None of this ever leaves your device. You can clear detection history and trusted devices at any time from within the app.</p>
 
@@ -109,8 +112,19 @@
     PrivyScan initiates a connection rather than passively listening.
   </p>
 
+  <h2>Purchases and subscriptions</h2>
+  <p>
+    PrivyScan offers an optional subscription, PrivyScan Pro. All purchases are processed by
+    Apple through the App Store using Apple's StoreKit framework — PrivyScan never sees or
+    receives your name, payment card, or Apple Account details. Whether you are subscribed is
+    confirmed by a signed receipt that Apple provides on your device; PrivyScan reads only that
+    entitlement, stores nothing about the purchase on any server (it has none), and the scan data
+    described above is never involved in a purchase. Apple's handling of a transaction is governed
+    by <a href="https://www.apple.com/legal/privacy/">Apple's Privacy Policy</a>.
+  </p>
+
   <h2>Data sharing</h2>
-  <p>PrivyScan does not share, sell, or transmit your data to anyone, because it has no mechanism to transmit data anywhere. There are no third-party SDKs, analytics libraries, or advertising frameworks in the app.</p>
+  <p>PrivyScan does not share, sell, or transmit your scan data or any personal information to anyone. Aside from the Apple-operated purchase flow described above, the app has no mechanism to transmit data anywhere. There are no third-party analytics libraries or advertising frameworks in the app.</p>
 
   <h2>Children's privacy</h2>
   <p>PrivyScan does not knowingly collect information from anyone, including children, because it does not collect information at all.</p>
